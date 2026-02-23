@@ -1,9 +1,9 @@
-# 🔧 IT TOOLKIT v4.0
+# 🔧 IT TOOLKIT v4.1
 ## Helpdesk Edition | Pendrive Ready
 
 > **Referencia de comandos completamente offline, portable y personalizable para técnicos de IT.**
 
-![Version](https://img.shields.io/badge/version-4.0-blue?style=flat-square)
+![Version](https://img.shields.io/badge/version-4.1-blue?style=flat-square)
 ![Status](https://img.shields.io/badge/status-production-green?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-orange?style=flat-square)
 ![Platforms](https://img.shields.io/badge/platforms-Windows%20%7C%20Linux%20%7C%20macOS-purple?style=flat-square)
@@ -14,6 +14,7 @@
 - [Características](#características-principales)
 - [¿Para Quién?](#para-quién)
 - [Inicio Rápido](#-inicio-rápido)
+- [Versiones & Roadmap](#-versiones--roadmap)
 - [Estructura de la App](#estructura-de-la-app)
 - [Entornos de Trabajo](#entornos-de-trabajo)
 - [Almacenamiento de Datos](#-almacenamiento-de-datos)
@@ -100,7 +101,75 @@ Doble clic en IT_Toolkit_v4.html
 
 ---
 
-## 📐 Estructura de la App
+## � Versiones & Roadmap
+
+### Versión Actual: **v4.1** (Enero 2026)
+- ✅ Filtros refactorizados y optimizados
+- ✅ UI mejorada con barra SISTEMA independiente
+- ✅ Botón de ayuda para activar/desactivar tooltips
+- ✅ Plataforma estable y robusta
+- 💻 **Optimizada para DESKTOP**
+
+**[Documentación completa en CHANGELOG_v4.1.md](CHANGELOG_v4.1.md)**
+
+### 🚀 Próxima Versión: **v5.0** (Roadmap Q1 2026)
+
+#### 📱 **MOBILE-FIRST IMPLEMENTATION**
+
+La v5 transformará IT Toolkit en una **Progressive Web App (PWA)** totalmente responsive:
+
+| Feature | v5.0 | v5.1+ |
+|---------|------|-------|
+| Diseño Responsive | ✅ | ✅ |
+| Drawer Navigation | ✅ | ✅ |
+| Bottom Navbar Móvil | ✅ | ✅ |
+| Touch Optimization | ✅ | ✅ |
+| PWA (Offline/Install) | ✅ | ✅ |
+| Lighthouse >90 | ✅ | ✅ |
+| Gestures (Swipe) | 🔄 | ✅ |
+| Voice Search | 🔄 | ✅ |
+| Native Wrappers | 🔄 | 🔄 |
+
+#### 📊 Comparación v4.1 vs v5.0
+
+```
+ASPECTO                 v4.1         v5.0
+─────────────────────────────────────────────
+Dispositivos           Desktop       Desktop + Mobile + Tablet
+Responsivo             Parcial       Total (mobile-first)
+Sidebar                Fix (270px)   Drawer móvil
+Navigación Bot          ✗             ✅ (Móvil)
+Tamaño botones          32-44px       48px+ (táctil)
+Pantalla búsqueda       Normal        Fullscreen móvil
+Offline                 Básico        PWA completo
+Instalable              ✗             ✅ App-like
+Lighthouse              N/A           >90
+Plataformas             Win/Mac/Lx    + iOS/Android
+```
+
+#### 🎯 Beneficios de v5
+- 📱 **Funciona en cualquier dispositivo**
+- ⚡ **Instalable como app** (sin app store)
+- 🔌 **Offline 100% funcional**
+- 👆 **Optimizado para tablets y teléfonos**
+- 🚀 **Performance mejorado (Lighthouse >90)**
+- 🎨 **UI táctil-friendly**
+
+#### 📅 Timeline Estimado
+```
+│ Sem 1-2 │ Estructura Responsive
+│ Sem 3-4 │ Mobile Navigation + Bottom Navbar
+│ Sem 5-6 │ PWA Setup + Performance
+│ Sem 7-8 │ Testing QA + Release
+  ──────────────────────
+  TOTAL: 6 semanas
+```
+
+**[Plan detallado en ROADMAP_v5_MOBILE.md](ROADMAP_v5_MOBILE.md)**
+
+---
+
+## �📐 Estructura de la App
 
 ### **Jerarquía de Navegación**
 
