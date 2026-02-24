@@ -10,9 +10,7 @@ const CACHE_VERSION = 'v5.0.0';
 const ASSETS_TO_CACHE = [
   './',
   './IT_Toolkit_v5.html',
-  './manifest.json',
-  './icon-192.png',
-  './icon-512.png'
+  './manifest.json'
 ];
 
 // ═══ INSTALL: Cache essential assets ═══

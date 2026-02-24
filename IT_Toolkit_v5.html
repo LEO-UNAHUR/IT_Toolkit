@@ -10,7 +10,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="description" content="IT Support Toolkit v5 - PWA para helpdesk, sysadmin y NOC. Offline first, responsive, mobile-native experience.">
 <link rel="manifest" href="manifest.json">
-<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>⚡</text></svg>">
 <title>IT Support Toolkit v5.0 Mobile</title>
 <style>
 /* ═══════════════════════════════════════════
@@ -2909,10 +2909,6 @@ function bottomNavClick(section) {
     showSec(section);
   }
 }
-  _origShowSec(id);
-  const sb = document.getElementById('sidebarNav');
-  if (sb && sb.classList.contains('open')) toggleSidebar();
-};
 
 // Animate stat counters on home load (count-up effect)
 function animateCounters() {
