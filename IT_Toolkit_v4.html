@@ -2279,22 +2279,43 @@ function goHistory(i) {
   const h = history[i];
   if (!h) return;
   const all = getAllCommands();
+  
+  // Búsqueda 1: Exacta por nombre y sección
   let cmd = all.find(c => c.name === h.name && c.sec === h.sec);
+  
+  // Búsqueda 2: Solo por nombre exacto
   if (!cmd) cmd = all.find(c => c.name === h.name);
-  if (!cmd) { toast('⚠️ Comando no encontrado'); return; }
+  
+  // Búsqueda 3: Por nombre normalizado (trim + case insensitive)
+  if (!cmd) {
+    const hName = (h.name || '').trim().toLowerCase();
+    cmd = all.find(c => (c.name || '').trim().toLowerCase() === hName);
+  }
+  
+  // Búsqueda 4: Por nombre parcial (sin emoji inicial)
+  if (!cmd) {
+    const hNameNoEmoji = (h.name || '').replace(/^[\u{1F000}-\u{1F9FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]\s*/u, '').trim();
+    cmd = all.find(c => {
+      const cNameNoEmoji = (c.name || '').replace(/^[\u{1F000}-\u{1F9FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]\s*/u, '').trim();
+      return cNameNoEmoji.toLowerCase() === hNameNoEmoji.toLowerCase();
+    });
+  }
+  
+  if (!cmd) { toast('⚠️ Comando no encontrado: ' + (h.name || 'sin nombre')); console.warn('Comando no encontrado en historial:', h); return; }
+  
   showSec(cmd.s);
   setTimeout(() => {
     const grid = document.getElementById('g-' + cmd.s);
     if (!grid) return;
     const card = [...grid.querySelectorAll('.cmd-card')].find(c => {
       const name = c.querySelector('.cmd-name')?.innerText || '';
-      return name === cmd.name;
+      return name === cmd.name || name.trim() === cmd.name.trim();
     });
     if (!card) { toast('⚠️ Tarjeta no disponible'); return; }
     card.scrollIntoView({behavior:'smooth',block:'center'});
     card.style.boxShadow = '0 0 0 3px rgba(var(--ear),.4)';
     setTimeout(() => card.style.boxShadow = '', 1200);
-  }, 100);
+  }, 200);
 }
 
 function exportHistory() {
@@ -2995,6 +3016,24 @@ function filterTools() {
   renderIncidents();
   filterTools();
   applyCommandCodeFilter();
+  
+  // Logo click handler - ensure it works with event listener too
+  const logo = document.querySelector('.logo');
+  if (logo) {
+    // Backup: Add click event listener in case onclick doesn't fire
+    logo.addEventListener('click', function(e) {
+      if (e.currentTarget === logo) {
+        showSec('home');
+      }
+    });
+    // Keyboard accessibility (Enter/Space)
+    logo.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        showSec('home');
+      }
+    });
+  }
   
   // Sync tools env filter with current env
   const curEnv = document.body.getAttribute('data-env') || 'default';
