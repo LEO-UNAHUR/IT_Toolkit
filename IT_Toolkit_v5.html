@@ -163,7 +163,9 @@ body::before{content:'';position:fixed;top:-220px;right:-220px;width:620px;heigh
 .ico-btn:hover{border-color:var(--ea);color:var(--ea);}
 /* HEADER */
 header{background:rgba(18,22,28,.92);border-bottom:1px solid var(--bd);padding:0 20px;display:flex;align-items:center;gap:14px;height:var(--rh);position:sticky;top:var(--sh);z-index:300;transition:background .3s;box-shadow:0 6px 18px rgba(0,0,0,.35);backdrop-filter:saturate(1.15) blur(10px);}
-.logo{display:flex;align-items:center;gap:10px;flex-shrink:0;}
+.logo{display:flex;align-items:center;gap:10px;flex-shrink:0;cursor:pointer;transition:opacity .2s;}
+.logo:hover{opacity:.8;}
+.logo:active{opacity:.6;}
 .logo-ico{width:34px;height:34px;border:1px solid rgba(var(--ear),.45);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:16px;animation:lpulse 3s infinite;transition:border-color .4s;background:rgba(var(--ear),.12);}
 @keyframes lpulse{0%,100%{box-shadow:0 0 0 0 rgba(var(--ear),.5)}70%{box-shadow:0 0 0 7px rgba(var(--ear),0)}}
 .logo h1{font-size:16px;font-weight:700;letter-spacing:2.4px;color:var(--ea);text-transform:uppercase;font-family:var(--mono);transition:color .4s;}
@@ -963,7 +965,7 @@ hr.dv{border:none;border-top:1px solid var(--bd);margin:16px 0;}
 <!-- HEADER -->
 <header role="banner">
   <button class="hamburger" onclick="toggleSidebar()" aria-label="Abrir menú lateral" title="Abre el menú de navegación">☰</button>
-  <div class="logo">
+  <div class="logo" onclick="showSec('home')" title="Ir a Inicio" role="button" tabindex="0">
     <div class="logo-ico">⚡</div>
     <div><h1>IT TOOLKIT</h1><p>// MOBILE PWA v5.0</p></div>
   </div>
