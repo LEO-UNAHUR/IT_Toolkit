@@ -1,20 +1,23 @@
-# 🔧 IT TOOLKIT v4.1
-## Helpdesk Edition | Pendrive Ready
+# 🔧 IT TOOLKIT
+## Desktop Edition | Mobile PWA | Pendrive Ready
 
-> **Referencia de comandos completamente offline, portable y personalizable para técnicos de IT.**
+> **Referencia de comandos completamente offline, portable y personalizable para técnicos de IT.**  
+> **Ahora disponible en Desktop (v4.1) y Mobile PWA (v5.0)**
 
-![Version](https://img.shields.io/badge/version-4.1-blue?style=flat-square)
+![Version Desktop](https://img.shields.io/badge/desktop-v4.1-blue?style=flat-square)
+![Version Mobile](https://img.shields.io/badge/mobile-v5.0-green?style=flat-square)
 ![Status](https://img.shields.io/badge/status-production-green?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-orange?style=flat-square)
-![Platforms](https://img.shields.io/badge/platforms-Windows%20%7C%20Linux%20%7C%20macOS-purple?style=flat-square)
+![Platforms](https://img.shields.io/badge/platforms-Windows%20%7C%20Linux%20%7C%20macOS%20%7C%20Android%20%7C%20iOS-purple?style=flat-square)
 
 ---
 
 ## 📋 Índice
+- [Elige Tu Versión](#-elige-tu-versión)
 - [Características](#características-principales)
 - [¿Para Quién?](#para-quién)
 - [Inicio Rápido](#-inicio-rápido)
-- [Versiones & Roadmap](#-versiones--roadmap)
+- [Versiones Disponibles](#-versiones-disponibles)
 - [Estructura de la App](#estructura-de-la-app)
 - [Entornos de Trabajo](#entornos-de-trabajo)
 - [Almacenamiento de Datos](#-almacenamiento-de-datos)
@@ -24,7 +27,55 @@
 
 ---
 
-## 🚀 Características Principales
+## � Elige Tu Versión
+
+### 💻 Desktop (v4.1) - Recomendado para PC/Laptop
+**Mejor para:** Trabajo en escritorio, múltiples monitores, uso intensivo  
+**Archivo:** `IT_Toolkit_v4.html`
+
+✅ Diseño optimizado para pantallas grandes  
+✅ Sidebar fijo de 270px  
+✅ Grids de 2-3 columnas  
+✅ Ideal para copiar comandos al terminal abierto  
+✅ 100% funcional offline desde pendrive  
+
+**[📥 Abrir IT_Toolkit_v4.html](IT_Toolkit_v4.html)**
+
+---
+
+### 📱 Mobile PWA (v5.0) - Recomendado para Móviles/Tablets
+**Mejor para:** Soporte in-situ, trabajo de campo, tablets, smartphones  
+**Archivo:** `IT_Toolkit_v5.html`
+
+✅ Responsive 100% (320px → ∞)  
+✅ Drawer navigation con menú hamburguesa  
+✅ Bottom navigation bar  
+✅ Touch-optimized (botones 48px)  
+✅ Instalable como PWA en Android/iOS  
+✅ Service Worker para offline 100%  
+✅ Compatible con Desktop también  
+
+**[📥 Abrir IT_Toolkit_v5.html](IT_Toolkit_v5.html)** | **[📖 Guía Instalación PWA](INSTALL_v5.md)**
+
+---
+
+### 🤔 ¿Cuál Elegir?
+
+| Situación | Versión Recomendada |
+|-----------|---------------------|
+| Trabajo diario en PC/Laptop | 💻 **Desktop v4.1** |
+| Soporte técnico in-situ | 📱 **Mobile v5.0** |
+| Tablet (iPad, Surface) | 📱 **Mobile v5.0** |
+| Smartphone (Android/iOS) | 📱 **Mobile v5.0** |
+| Quiero instalar como app | 📱 **Mobile v5.0** |
+| Uso en pendrive USB | 💻 **Desktop v4.1** (o ambas) |
+| Varios dispositivos | 💻 + 📱 **Ambas** |
+
+**Nota:** Ambas versiones son 100% compatibles entre sí (localStorage, favoritos, comandos personalizados).
+
+---
+
+## �🚀 Características Principales
 
 ### ⚡ **Velocidad & Portabilidad**
 - ✅ Funciona **100% offline** sin requiere internet
@@ -74,26 +125,65 @@
 
 ## 🏃 Inicio Rápido
 
-### 1️⃣ **Obtener la App**
+### Opción A: Desktop (v4.1)
+
+#### 1️⃣ **Obtener la App**
 ```bash
 # Descargar desde pendrive o cloud
 IT_Toolkit_v4.html
 ```
 
-### 2️⃣ **Abrir en Navegador**
+#### 2️⃣ **Abrir en Navegador**
 ```
 Doble clic en IT_Toolkit_v4.html
 # Se abre automáticamente en tu navegador predeterminado
 ```
 
-### 3️⃣ **Empezar a Usar**
+#### 3️⃣ **Empezar a Usar**
 - 🔍 **Buscar**: Escribe en el buscador superior (Ctrl+K)
 - 🌐 **Filtrar por Entorno**: Selecciona tab arriba (General, AD, Corporativo, etc.)
 - 💻 **Filtrar por SO**: Usa barra SISTEMA (✓ TODOS, 🪟 WIN, 🐧 LIN, 🍎 MAC)
 - ⭐ **Guardar Favoritos**: Haz clic en la estrella
 - 📋 **Copiar Comando**: Haz clic en el botón ⧉
 
-### 4️⃣ **Crear Comandos Personalizados**
+---
+
+### Opción B: Mobile PWA (v5.0) 📱
+
+#### 1️⃣ **Abrir en Navegador**
+```bash
+# Desktop o Mobile - Abre el archivo
+IT_Toolkit_v5.html
+```
+
+#### 2️⃣ **Instalar como PWA (Opcional pero Recomendado)**
+
+**En Android (Chrome/Edge):**
+1. Toca menú ⋮ → "Agregar a pantalla de inicio"
+2. Confirma la instalación
+3. Aparecerá como app en tu launcher
+
+**En iOS (Safari):**
+1. Toca botón Compartir 🔼
+2. "Agregar a pantalla de inicio"
+3. Dale un nombre y confirma
+
+**En Desktop (Chrome/Edge):**
+1. Click en ⊕ en la barra de direcciones
+2. "Instalar IT Support Toolkit"
+3. Se instalará como app independiente
+
+📖 **[Guía completa de instalación PWA](INSTALL_v5.md)**
+
+#### 3️⃣ **Navegar en Mobile**
+- 🍔 **Menú Hamburguesa (☰)**: Abre el drawer lateral
+- 📊 **Bottom Navigation**: 5 accesos rápidos siempre visibles
+  - 🏠 Inicio | 🔍 Buscar | ⭐ Favoritos | 🧰 Tools | ☰ Menú
+- 👆 **Touch-Friendly**: Botones grandes optimizados para táctil
+
+---
+
+### 4️⃣ **Crear Comandos Personalizados** (Ambas versiones)
 - Ve a la sección **"Mis Comandos"**
 - Completa el formulario COMPOSE
 - El comando se guarda automáticamente en tu navegador
@@ -101,34 +191,38 @@ Doble clic en IT_Toolkit_v4.html
 
 ---
 
-## � Versiones & Roadmap
+## 📦 Versiones Disponibles
 
-### Versión Actual: **v4.1** (Enero 2026)
+### 💻 Versión Desktop: **v4.1** (Enero 2026)
 - ✅ Filtros refactorizados y optimizados
 - ✅ UI mejorada con barra SISTEMA independiente
 - ✅ Botón de ayuda para activar/desactivar tooltips
 - ✅ Plataforma estable y robusta
 - 💻 **Optimizada para DESKTOP**
+- 📄 **Archivo:** `IT_Toolkit_v4.html`
 
-**[Documentación completa en docs/v4/CHANGELOG_v4.1.md](docs/v4/CHANGELOG_v4.1.md)**
+**[📖 Documentación completa](docs/v4/CHANGELOG_v4.1.md)**
 
-### 🚀 Próxima Versión: **v5.0** (Roadmap Q1 2026)
+---
 
-#### 📱 **MOBILE-FIRST IMPLEMENTATION**
+### 📱 Versión Mobile PWA: **v5.0** (Febrero 2026) ✨ **NUEVO**
 
-La v5 transformará IT Toolkit en una **Progressive Web App (PWA)** totalmente responsive:
+#### **MOBILE-FIRST IMPLEMENTATION**
 
-| Feature | v5.0 | v5.1+ |
-|---------|------|-------|
-| Diseño Responsive | ✅ | ✅ |
-| Drawer Navigation | ✅ | ✅ |
-| Bottom Navbar Móvil | ✅ | ✅ |
-| Touch Optimization | ✅ | ✅ |
-| PWA (Offline/Install) | ✅ | ✅ |
-| Lighthouse >90 | ✅ | ✅ |
-| Gestures (Swipe) | 🔄 | ✅ |
-| Voice Search | 🔄 | ✅ |
-| Native Wrappers | 🔄 | 🔄 |
+La v5 transforma IT Toolkit en una **Progressive Web App (PWA)** totalmente responsive:
+
+| Feature | Estado |
+|---------|--------|
+| Diseño Responsive | ✅ **Completado** |
+| Drawer Navigation | ✅ **Completado** |
+| Bottom Navbar Móvil | ✅ **Completado** |
+| Touch Optimization (48px) | ✅ **Completado** |
+| PWA (Offline/Install) | ✅ **Completado** |
+| Service Worker | ✅ **Completado** |
+| Manifest.json | ✅ **Completado** |
+| Android/iOS Compatible | ✅ **Completado** |
+| Gestures (Swipe) | 🔄 Roadmap v5.1 |
+| Voice Search | 🔄 Roadmap v5.1 |
 
 #### 📊 Comparación v4.1 vs v5.0
 
@@ -148,24 +242,26 @@ Plataformas             Win/Mac/Lx    + iOS/Android
 ```
 
 #### 🎯 Beneficios de v5
-- 📱 **Funciona en cualquier dispositivo**
+- 📱 **Funciona en cualquier dispositivo** (320px → ∞)
 - ⚡ **Instalable como app** (sin app store)
-- 🔌 **Offline 100% funcional**
+- 🔌 **Offline 100% funcional** con Service Worker
 - 👆 **Optimizado para tablets y teléfonos**
-- 🚀 **Performance mejorado (Lighthouse >90)**
-- 🎨 **UI táctil-friendly**
+- 🚀 **Performance mejorado** (PWA completo)
+- 🎨 **UI táctil-friendly** (botones 48x48px mínimo)
+- 🍔 **Drawer navigation** deslizable
+- 📊 **Bottom nav bar** con 5 accesos rápidos
+- 🔄 **100% compatible** con v4.1 (localStorage compartido)
 
-#### 📅 Timeline Estimado
-```
-│ Sem 1-2 │ Estructura Responsive
-│ Sem 3-4 │ Mobile Navigation + Bottom Navbar
-│ Sem 5-6 │ PWA Setup + Performance
-│ Sem 7-8 │ Testing QA + Release
-  ──────────────────────
-  TOTAL: 6 semanas
-```
+#### 📄 Archivos v5.0
+- 📱 **IT_Toolkit_v5.html** - Aplicación principal
+- ⚙️ **manifest.json** - Configuración PWA
+- 🔧 **service-worker.js** - Cache offline
+- 📖 **INSTALL_v5.md** - Guía de instalación
+- 📋 **RELEASE_v5_SUMMARY.md** - Resumen de construcción
 
-**[Plan detallado en docs/v5/ROADMAP_v5_MOBILE.md](docs/v5/ROADMAP_v5_MOBILE.md)**
+#### 🚀 Estado: **LANZADO** (Febrero 2026)
+
+**[📖 Guía de Instalación](INSTALL_v5.md)** | **[📋 Roadmap Detallado](docs/v5/ROADMAP_v5_MOBILE.md)** | **[✅ Checklist Técnico](docs/v5/CHECKLIST_v5_TECHNICAL.md)**
 
 ---
 
@@ -646,8 +742,18 @@ Renderizar interfaz
 
 ### **General**
 
+**P: ¿Cuál es la diferencia entre v4.1 y v5.0?**
+> R: 
+> - **v4.1 (Desktop)**: Optimizada para PC/Laptop, sidebar fijo, grids de 2-3 columnas
+> - **v5.0 (Mobile PWA)**: Responsive 100%, drawer navigation, bottom nav bar, instalable como app
+> - **Compatibilidad**: Ambas versiones comparten localStorage (favoritos, comandos personalizados, historial)
+> - **Recomendación**: Usa v4.1 en escritorio y v5.0 en móviles/tablets (o instala v5 como PWA para todo)
+
+**P: ¿Puedo usar ambas versiones?**
+> R: ¡Sí! Ambas son 100% compatibles. Puedes usar v4.1 en tu PC y v5.0 en tu móvil, compartiendo el mismo localStorage si es el mismo navegador, o sincronizando comandos personalizados mediante JSON.
+
 **P: ¿Necesito Internet para usar IT TOOLKIT?**
-> R: No. Funciona 100% offline. Solo necesitas un navegador web.
+> R: No. Ambas versiones funcionan 100% offline. Solo necesitas un navegador web. v5.0 además tiene Service Worker para cache offline mejorado.
 
 **P: ¿Dónde se guardan mis comandos personalizados?**
 > R: En `localStorage` del navegador. Persisten entre sesiones pero son locales del navegador/equipo.
@@ -771,18 +877,59 @@ MIT License - Libre para usar, modificar y distribuir.
 
 <div align="center">
 
-### 🔧 **IT TOOLKIT v4.0** 🔧
+### 🔧 **IT TOOLKIT v5.0 Mobile + v4.1 Desktop** 🔧
 
-**Hecho por técnico, para técnicos.**
+**Hecho por técnico, para técnicos. Ahora en cualquier dispositivo.**
 
-Descárgalo hoy y llévalo a todos lados en tu pendrive.
+Desktop: [📥 IT_Toolkit_v4.html](IT_Toolkit_v4.html)  
+Mobile: [📱 IT_Toolkit_v5.html](IT_Toolkit_v5.html) | [📖 Guía PWA](INSTALL_v5.md)
 
-[⬇️ Descargar Ahora](#)
+Descárgalo hoy y llévalo a todos lados en tu pendrive o instálalo como app en tu móvil.
 
 </div>
 
 ---
 
-**Última página actualizada**: 2026-02-23  
-**Versión de documentación**: 4.0  
+## 📂 Estructura del Proyecto
+
+```
+📁 IT Support Toolkit/
+│
+├── 📱 IT_Toolkit_v5.html          ← v5.0 Mobile PWA (Responsive, instalable)
+├── 💻 IT_Toolkit_v4.html          ← v4.1 Desktop (Optimizado PC/Laptop)
+│
+├── ⚙️  manifest.json               ← Configuración PWA
+├── 🔧 service-worker.js           ← Cache offline para PWA
+│
+├── 📖 README.md                   ← Este archivo
+├── 📱 INSTALL_v5.md               ← Guía instalación PWA
+├── 📋 RELEASE_v5_SUMMARY.md       ← Resumen construcción v5
+│
+└── 📁 docs/
+    ├── 📁 v4/                     ← Documentación v4.1
+    │   ├── CHANGELOG_v4.1.md
+    │   ├── ANALISIS_FILTROS.md
+    │   └── DOCUMENTACION_ALMACENAMIENTO.md
+    │
+    └── 📁 v5/                     ← Documentación v5.0
+        ├── ROADMAP_v5_MOBILE.md
+        ├── CHECKLIST_v5_TECHNICAL.md
+        ├── SPRINT_PLAN_v5.md
+        └── V5_SUMMARY.md
+```
+
+### Archivos Principales
+
+| Archivo | Descripción | Uso |
+|---------|-------------|-----|
+| `IT_Toolkit_v4.html` | Versión Desktop optimizada | PC, Laptop, pantallas grandes |
+| `IT_Toolkit_v5.html` | Versión Mobile PWA responsive | Móviles, tablets, cualquier tamaño |
+| `manifest.json` | Metadatos PWA (iconos, config) | Requerido para instalar v5 como app |
+| `service-worker.js` | Cache offline | Permite funcionar sin internet (v5) |
+| `INSTALL_v5.md` | Guía de instalación v5 | Cómo instalar PWA en Android/iOS |
+
+---
+
+**Última actualización**: 2026-02-23  
+**Versiones actuales**: Desktop v4.1 | Mobile v5.0  
 **Idioma**: Español (Spanish)
