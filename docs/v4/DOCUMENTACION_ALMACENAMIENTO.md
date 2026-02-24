@@ -286,7 +286,7 @@ Se implementó la **Opción 1+2** del análisis de filtros para mejorar la UX:
 
 - Detalles técnicos: [CHANGELOG_v4.1.md](CHANGELOG_v4.1.md)
 - Análisis completo: [ANALISIS_FILTROS.md](ANALISIS_FILTROS.md)
-- README actualizado: [README.md](README.md)
+- README actualizado: [README.md](../../README.md)
 
 ---
 

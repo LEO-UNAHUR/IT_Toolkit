@@ -171,7 +171,7 @@ function setEnv(env) {
 
 ## 📝 Documentación Actualizada
 
-- ✅ [README.md](README.md) - Estructura actualizada
+- ✅ [README.md](../../README.md) - Estructura actualizada
 - ✅ [DOCUMENTACION_ALMACENAMIENTO.md](DOCUMENTACION_ALMACENAMIENTO.md) - Notas sobre v4.1
 - ✅ [ANALISIS_FILTROS.md](ANALISIS_FILTROS.md) - Marcado como "IMPLEMENTADO"
 

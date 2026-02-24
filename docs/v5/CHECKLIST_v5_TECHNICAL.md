@@ -314,9 +314,9 @@ TOTAL:                          [░░░░░░░░░░] 0%
 ## 🔗 ARCHIVOS RELACIONADOS
 
 - [ROADMAP_v5_MOBILE.md](ROADMAP_v5_MOBILE.md) - Plan general
-- [IT_Toolkit_v5.html](IT_Toolkit_v5.html) - (Será creado)
-- [manifest.json](manifest.json) - PWA manifest
-- [sw.js](sw.js) - Service Worker
+- [IT_Toolkit_v5.html](../../IT_Toolkit_v5.html) - (Será creado)
+- [manifest.json](../../manifest.json) - PWA manifest
+- [sw.js](../../sw.js) - Service Worker
 
 ---
 

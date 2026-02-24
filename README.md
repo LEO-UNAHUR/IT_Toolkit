@@ -110,7 +110,7 @@ Doble clic en IT_Toolkit_v4.html
 - ✅ Plataforma estable y robusta
 - 💻 **Optimizada para DESKTOP**
 
-**[Documentación completa en CHANGELOG_v4.1.md](CHANGELOG_v4.1.md)**
+**[Documentación completa en docs/v4/CHANGELOG_v4.1.md](docs/v4/CHANGELOG_v4.1.md)**
 
 ### 🚀 Próxima Versión: **v5.0** (Roadmap Q1 2026)
 
@@ -165,7 +165,7 @@ Plataformas             Win/Mac/Lx    + iOS/Android
   TOTAL: 6 semanas
 ```
 
-**[Plan detallado en ROADMAP_v5_MOBILE.md](ROADMAP_v5_MOBILE.md)**
+**[Plan detallado en docs/v5/ROADMAP_v5_MOBILE.md](docs/v5/ROADMAP_v5_MOBILE.md)**
 
 ---
 

@@ -392,5 +392,5 @@ Se implementará el filtrado real por entorno:
 
 **Documentación relacionada:**
 - [CHANGELOG_v4.1.md](CHANGELOG_v4.1.md) - Detalles técnicos
-- [README.md](README.md) - Interfaz actual
+- [README.md](../../README.md) - Interfaz actual
 - [DOCUMENTACION_ALMACENAMIENTO.md](DOCUMENTACION_ALMACENAMIENTO.md) - Storage + v4.1
