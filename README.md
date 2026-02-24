@@ -55,7 +55,7 @@
 ✅ Service Worker para offline 100%  
 ✅ Compatible con Desktop también  
 
-**[📥 Abrir IT_Toolkit_v5.html](IT_Toolkit_v5.html)** | **[📖 Guía Instalación PWA](INSTALL_v5.md)**
+**[📥 Abrir IT_Toolkit_v5.html](IT_Toolkit_v5.html)** | **[📖 Guía Instalación PWA](docs/v5/INSTALL_v5.md)**
 
 ---
 
@@ -173,7 +173,7 @@ IT_Toolkit_v5.html
 2. "Instalar IT Support Toolkit"
 3. Se instalará como app independiente
 
-📖 **[Guía completa de instalación PWA](INSTALL_v5.md)**
+📜 **[Guía completa de instalación PWA](docs/v5/INSTALL_v5.md)**
 
 #### 3️⃣ **Navegar en Mobile**
 - 🍔 **Menú Hamburguesa (☰)**: Abre el drawer lateral
@@ -256,12 +256,12 @@ Plataformas             Win/Mac/Lx    + iOS/Android
 - 📱 **IT_Toolkit_v5.html** - Aplicación principal
 - ⚙️ **manifest.json** - Configuración PWA
 - 🔧 **service-worker.js** - Cache offline
-- 📖 **INSTALL_v5.md** - Guía de instalación
-- 📋 **RELEASE_v5_SUMMARY.md** - Resumen de construcción
+📖 **docs/v5/INSTALL_v5.md** - Guía de instalación
+📋 **docs/v5/RELEASE_v5_SUMMARY.md** - Resumen de construcción
 
 #### 🚀 Estado: **LANZADO** (Febrero 2026)
 
-**[📖 Guía de Instalación](INSTALL_v5.md)** | **[📋 Roadmap Detallado](docs/v5/ROADMAP_v5_MOBILE.md)** | **[✅ Checklist Técnico](docs/v5/CHECKLIST_v5_TECHNICAL.md)**
+**[📖 Guía de Instalación](docs/v5/INSTALL_v5.md)** | **[📋 Roadmap Detallado](docs/v5/ROADMAP_v5_MOBILE.md)** | **[✅ Checklist Técnico](docs/v5/CHECKLIST_v5_TECHNICAL.md)**
 
 ---
 
@@ -882,7 +882,7 @@ MIT License - Libre para usar, modificar y distribuir.
 **Hecho por técnico, para técnicos. Ahora en cualquier dispositivo.**
 
 Desktop: [📥 IT_Toolkit_v4.html](IT_Toolkit_v4.html)  
-Mobile: [📱 IT_Toolkit_v5.html](IT_Toolkit_v5.html) | [📖 Guía PWA](INSTALL_v5.md)
+Mobile: [📱 IT_Toolkit_v5.html](IT_Toolkit_v5.html) | [📖 Guía PWA](docs/v5/INSTALL_v5.md)
 
 Descárgalo hoy y llévalo a todos lados en tu pendrive o instálalo como app en tu móvil.
 
@@ -926,7 +926,7 @@ Descárgalo hoy y llévalo a todos lados en tu pendrive o instálalo como app en
 | `IT_Toolkit_v5.html` | Versión Mobile PWA responsive | Móviles, tablets, cualquier tamaño |
 | `manifest.json` | Metadatos PWA (iconos, config) | Requerido para instalar v5 como app |
 | `service-worker.js` | Cache offline | Permite funcionar sin internet (v5) |
-| `INSTALL_v5.md` | Guía de instalación v5 | Cómo instalar PWA en Android/iOS |
+| `docs/v5/INSTALL_v5.md` | Guía de instalación v5 | Cómo instalar PWA en Android/iOS |
 
 ---
 
