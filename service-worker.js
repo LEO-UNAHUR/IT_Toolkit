@@ -9,7 +9,7 @@ const CACHE_VERSION = 'v5.0.0';
 // Assets to cache on install
 const ASSETS_TO_CACHE = [
   './',
-  './IT_Toolkit_v5.html',
+  './IT_Toolkit_Mobile_v5.0.html',
   './manifest.json'
 ];
 
@@ -173,7 +173,7 @@ self.addEventListener('notificationclick', event => {
   event.notification.close();
   
   event.waitUntil(
-    clients.openWindow('./IT_Toolkit_v5.html')
+    clients.openWindow('./IT_Toolkit_Mobile_v5.0.html')
   );
 });
 
